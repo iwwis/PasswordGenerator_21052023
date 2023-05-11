@@ -8,6 +8,6 @@ public class Main {
 		generator.lengthOkay(generator.zahl);
 		
 	}
-	// Count count = new Count();
+	// Count count = new Count()
 
 }
