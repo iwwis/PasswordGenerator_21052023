@@ -1,13 +1,16 @@
 package PasswGenerator;
 
+
 public class GeneratorBedingungen {
 	
+}
+/**
 	public String finalesPasswort = "";
 	public int zahl = 0;
 	
 	int length = 16;
 	String digits = "0123456789";
-	String specials = "~=+%^*/()[]{}/!@#$?|";
+	String specials = "~=+%^* /()[]{}/!@#$?|"; 
 	String all = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	           + "abcdefghijklmnopqrstuvwxyz"
 	           + digits + specials;
@@ -24,5 +27,6 @@ public class GeneratorBedingungen {
 	return true;
 	
 	}
-	
-}
+*/	
+
+// 	korrekte Zeile: String specials = "~=+%^*/()[]{}/!@#$?|";
