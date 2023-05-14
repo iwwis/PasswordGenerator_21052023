@@ -1,4 +1,5 @@
 package PasswGenerator;
+
 public class PasswordGenerator {
 
     private static final SecureRandom secureRandom = new SecureRandom();
