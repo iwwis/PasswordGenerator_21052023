@@ -51,5 +51,7 @@ public class PasswordGenerator {
         }
 
         return stringBuilder.toString();
+        
+        // File datei = new File("Passworts.txt");
     }
 }

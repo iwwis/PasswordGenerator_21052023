@@ -6,6 +6,7 @@ public class Main {
 	
 		String s = PasswordGenerator.generatePassword(64, PasswordGenerator.CharacterSet.All);
 		System.out.println(s);
-	
+
 		}
+	
 }
