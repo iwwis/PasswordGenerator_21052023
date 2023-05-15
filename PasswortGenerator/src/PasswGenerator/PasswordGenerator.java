@@ -21,10 +21,10 @@ public class PasswordGenerator {
         Special,
         All
     }
-    // Initialisierung von einem String GetCharakters - nimm die o.g. Zeichen
+    // Initialisierung von einem String GetCharakters - kann dank enum CharacterSet nur die o.g. Zeichen nehmen!
     private static String getCharacters(CharacterSet characterSet) {
 
-    	// switch von charakterSet - set die o.g. Zeichen
+    	// switch von charakterSet - set die o.g. Zeichen als folgende swicht-cases
         switch (characterSet) {
             case Alpha:
                 return alpha;
@@ -49,6 +49,7 @@ public class PasswordGenerator {
     public static String generatePassword(int length, CharacterSet characterSet) {
     	
     	// Construktor: aus getCharakters und charakterSet wird ein neuer String gebaut
+    	// in der Klasse StringBuilder wird neue Klasse gebaut***** - Kommentar korrigieren!
         String characters = getCharacters(characterSet);
         StringBuilder stringBuilder = new StringBuilder();
         
