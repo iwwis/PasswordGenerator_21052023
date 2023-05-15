@@ -2,6 +2,7 @@ package PasswGenerator;
 
 public class PasswordGenerator {
 
+	
     private static final SecureRandom secureRandom = new SecureRandom();
 
     private static final String alpha = "abcdefghijklmnopqrstuvwxyz";
