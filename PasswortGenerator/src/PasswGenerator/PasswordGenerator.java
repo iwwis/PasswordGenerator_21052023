@@ -63,6 +63,5 @@ public class PasswordGenerator {
         // Rückgabe eines neuen Strings stringBuilder 
         // mit der toString-Methode, 
         return stringBuilder.toString();
-
     }
 }

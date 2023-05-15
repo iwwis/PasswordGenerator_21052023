@@ -25,8 +25,8 @@ public class SecureRandom {
     
 	
 	public int nextInt(int length) {
-		
+	//	Random rand = new Random();
+	//	return rand.nextInt(length);
 		return 0;
 	}
-
 }
