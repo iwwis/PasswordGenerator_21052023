@@ -53,10 +53,14 @@ public class PasswordGenerator {
         StringBuilder stringBuilder = new StringBuilder();
         
         // for-Schleife zum Durchgehen des gebildeten Strings mit allen Zeichen: StringBuilder
+        // die Funktion append hängt an den String stringBuilder die Werte aus den ()
+        // die Funktion charAt gibt ein Zeichen zurück, der sich in dem String charakters befindet bis zu der Länge des Strings
         for (int i = 0; i < length; i++) {
             stringBuilder.append(characters.charAt(secureRandom.nextInt(characters.length())));
         }
 
+        // Rückgabe eines neuen Strings stringBuilder 
+        // mit der toString-Methode, 
         return stringBuilder.toString();
 
     }
