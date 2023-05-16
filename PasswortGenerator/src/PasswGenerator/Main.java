@@ -15,4 +15,11 @@ public class Main {
 		System.out.println(s);
 		
 		}
+		PasswordGenerator passGen = new PasswordGenerator();
+		SecureRandom rand = new SecureRandom();
+		// Random rand = new Random();	???
+		//return rand.nextInt(length);	???
+		
+		File pw = new File();
+
 }

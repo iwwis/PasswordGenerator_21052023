@@ -42,7 +42,8 @@ public class PasswordGenerator {
                 return alpha + alphaCaps + numeric + specials;
         }
 
-        return alpha;
+        return alpha;	// Math.return(alpha + alphaCaps + numeric + specials);
+        // System.out.println(Math.random.(alpha + alphaCaps + numeric + specials));
     }
 
     // Deklaration des Strings generatePassword mit einer Länge (Typ: int) und aus dem String CharakterSet
@@ -61,7 +62,7 @@ public class PasswordGenerator {
         }
 
         // Rückgabe eines neuen Strings stringBuilder 
-        // mit der toString-Methode, 
+        // mit der toString-Methode
         return stringBuilder.toString();
     }
 }

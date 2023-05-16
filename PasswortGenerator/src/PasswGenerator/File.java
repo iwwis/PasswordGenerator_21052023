@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class File {
 	{
-		File pw = new File("pwarchiv.txt");
+		File pw = new File("src/PasswGenerator/pwarchiv.txt");	// ein absoluter Pfad oder relativer Pfad?
 		if(!pw.exists()) {
 			try {
 				pw.createNewFile();
