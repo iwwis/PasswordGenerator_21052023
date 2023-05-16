@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		// readPasswortFromFile - file auslesen! aufrufen!
 		NeuMyFile mfh = new NeuMyFile();
 
 	
@@ -17,7 +18,7 @@ public class Main {
 		// 3. Werte werden aus dem Switch-Fall "All" genommen
 		// 4. Ausgabe s gibt ein random-Wert aus - das sollte sie wenigstens machen!
 		
-		String s = PasswordGenerator.generatePassword(16, PasswordGenerator.CharacterSet.All);
+		String s = PasswordGenerator.generatePassword(20, PasswordGenerator.CharacterSet.All);
 		System.out.println(s);
 		
 		try {
@@ -25,6 +26,8 @@ public class Main {
 		}
 		catch(IOException e) {
 			System.out.println("File wurde nicht korrekt gespeichert!");
-		}	
+		}
+		
+		
 	}
 }
