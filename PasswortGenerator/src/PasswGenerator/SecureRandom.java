@@ -6,6 +6,12 @@ package PasswGenerator;
 
 public class SecureRandom {
 	
+	
+	public SecureRandom(String s) {
+		
+		
+		
+	}
 	// SecureRandom sollte deklariert werden als:
 	// SecureRandom random = new SecureRandom();
 	// die Klasse SecureRandom wurde schon im PasswordGenerator deklariert
@@ -25,8 +31,8 @@ public class SecureRandom {
     
 	
 	public int nextInt(int length) {
-		// Random rand = new Random();
-		//return rand.nextInt(length);
-		return 0;
+		//Random rand = new Random();
+		//return "" + rand.nextInt(length);
+		return 1;
 	}
 }

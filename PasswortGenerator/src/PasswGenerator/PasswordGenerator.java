@@ -1,4 +1,6 @@
 package PasswGenerator;
+import java.util.Random.*;
+import java.security.SecureRandom;
 
 public class PasswordGenerator {
 
@@ -65,4 +67,6 @@ public class PasswordGenerator {
         // mit der toString-Methode
         return stringBuilder.toString();
     }
+    
+    
 }
