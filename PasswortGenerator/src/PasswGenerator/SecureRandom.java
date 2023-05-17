@@ -8,9 +8,7 @@ public class SecureRandom {
 	
 	
 	public SecureRandom(String s) {
-		
-		
-		
+
 	}
 	// SecureRandom sollte deklariert werden als:
 	// SecureRandom random = new SecureRandom();
@@ -33,6 +31,6 @@ public class SecureRandom {
 	public int nextInt(int length) {
 		//Random rand = new Random();
 		//return "" + rand.nextInt(length);
-		return 1;
+		return 0;
 	}
 }

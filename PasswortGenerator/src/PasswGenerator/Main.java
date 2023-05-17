@@ -11,7 +11,7 @@ public class Main {
 		pwa.setVisible(true);
 		
 		// readPasswortFromFile - file auslesen! aufrufen!
-		NeuMyFile mfh = new NeuMyFile();
+		// NeuMyFile mfh = new NeuMyFile();
 
 	
 		// die Variable s wird mit einem Wert belegt
@@ -22,16 +22,20 @@ public class Main {
 		// 3. Werte werden aus dem Switch-Fall "All" genommen
 		// 4. Ausgabe s gibt ein random-Wert aus - das sollte sie wenigstens machen!
 		
-		String s = PasswordGenerator.generatePassword(20, CharacterSet.All);
-		System.out.println(s);
 		
-		try {
-			mfh.writePasswordToFile((s) + "\n");		
-		}
-		catch(IOException e) {
-			System.out.println("File wurde nicht korrekt gespeichert!");
-		}
 		
+		/**
+		 * 
+		 * String s = PasswordGenerator.generatePassword(24, CharacterSet.All);
+		 * System.out.println(s);
+		 * Dieses Block wurde in der Klasse PasswordAnzeige hinzugefügt
+			try {
+				mfh.writePasswordToFile((s) + "\n");		// "s" stand vorher für den Passwort
+				}
+			catch(IOException e) {			"e" stand vorher für IOException
+				System.out.println("File wurde nicht korrekt gespeichert!");
+				}
+		*/
 		
 	}
 }

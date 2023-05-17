@@ -47,16 +47,16 @@ public class PasswordGenerator {
                 return alpha + alphaCaps + numeric + specials;
         }
 
-        return alpha;	// Math.return(alpha + alphaCaps + numeric + specials);
-        // System.out.println(Math.random.(alpha + alphaCaps + numeric + specials));
+        return alpha;
     }
-
+    
     // Deklaration des Strings generatePassword mit einer Länge (Typ: int) und aus dem String CharakterSet
     public static String generatePassword(int length, CharacterSet characterSet) { 
-    			
+    	
     	// Construktor: aus getCharakters und charakterSet wird ein neuer String gebaut
     	// in der Klasse StringBuilder wird neue Klasse gebaut***** - Kommentar korrigieren!
         String characters = getCharacters(characterSet);
+
         StringBuilder stringBuilder = new StringBuilder();
         // for-Schleife zum Durchgehen des gebildeten Strings mit allen Zeichen: StringBuilder
         // die Funktion append hängt an den String stringBuilder die Werte aus den ()
@@ -68,5 +68,6 @@ public class PasswordGenerator {
         // Rückgabe eines neuen Strings stringBuilder 
         // mit der toString-Methode
         return stringBuilder.toString();
+        // System.out.println(generiertesPassword);
     }
 }
