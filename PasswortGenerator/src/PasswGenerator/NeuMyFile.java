@@ -12,7 +12,7 @@ public class NeuMyFile {
 	public NeuMyFile() {
 	
 	}
-	
+
 	public void writePasswordToFile(String pw) throws IOException {
 		File file = new File(PATH);
 		
