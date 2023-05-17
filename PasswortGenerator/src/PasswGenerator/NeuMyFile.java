@@ -10,7 +10,7 @@ public class NeuMyFile {
 	private final String PATH = "src/pwarchiv.txt";
 	
 	public NeuMyFile() {
-		
+	
 	}
 	
 	public void writePasswordToFile(String pw) throws IOException {

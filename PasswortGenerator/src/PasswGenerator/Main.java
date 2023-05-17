@@ -6,6 +6,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		PasswordGenerator pg = new PasswordGenerator();
+		PasswordAnzeige pwa = new PasswordAnzeige(pg);
+		pwa.setVisible(true);
+		
 		// readPasswortFromFile - file auslesen! aufrufen!
 		NeuMyFile mfh = new NeuMyFile();
 
@@ -18,7 +22,7 @@ public class Main {
 		// 3. Werte werden aus dem Switch-Fall "All" genommen
 		// 4. Ausgabe s gibt ein random-Wert aus - das sollte sie wenigstens machen!
 		
-		String s = PasswordGenerator.generatePassword(20, PasswordGenerator.CharacterSet.All);
+		String s = PasswordGenerator.generatePassword(20, CharacterSet.All);
 		System.out.println(s);
 		
 		try {

@@ -2,6 +2,17 @@ package PasswGenerator;
 import java.util.Random.*;
 import java.security.SecureRandom;
 
+enum CharacterSet {
+    Alpha,
+    AlphaCaps,
+    AlphaBoth,
+    Numeric,
+    AlphaNumeric,
+    Special,
+    All
+}
+
+
 public class PasswordGenerator {
 
 	// Auswahl von beliebigen Zeichen nach der Methode SecureRandom
@@ -14,17 +25,9 @@ public class PasswordGenerator {
     private static final String specials = "!§$%&/()=?.:,;+*#<>";			// Sonderzeichen
 
     // Auswahl der möglichen Zeichenketten(Strings) definiert in Enum 
-    public enum CharacterSet {
-        Alpha,
-        AlphaCaps,
-        AlphaBoth,
-        Numeric,
-        AlphaNumeric,
-        Special,
-        All
-    }
+ 
     // Initialisierung von einem String GetCharakters - kann dank enum CharacterSet nur die o.g. Zeichen nehmen!
-    private static String getCharacters(CharacterSet characterSet) {
+    public static String getCharacters(CharacterSet characterSet) {
 
     	// switch von charakterSet - set die o.g. Zeichen als folgende swicht-cases
         switch (characterSet) {
@@ -49,13 +52,12 @@ public class PasswordGenerator {
     }
 
     // Deklaration des Strings generatePassword mit einer Länge (Typ: int) und aus dem String CharakterSet
-    public static String generatePassword(int length, CharacterSet characterSet) {
-    	
+    public static String generatePassword(int length, CharacterSet characterSet) { 
+    			
     	// Construktor: aus getCharakters und charakterSet wird ein neuer String gebaut
     	// in der Klasse StringBuilder wird neue Klasse gebaut***** - Kommentar korrigieren!
         String characters = getCharacters(characterSet);
         StringBuilder stringBuilder = new StringBuilder();
-        
         // for-Schleife zum Durchgehen des gebildeten Strings mit allen Zeichen: StringBuilder
         // die Funktion append hängt an den String stringBuilder die Werte aus den ()
         // die Funktion charAt gibt ein Zeichen zurück, der sich in dem String charakters befindet bis zu der Länge des Strings
@@ -67,6 +69,4 @@ public class PasswordGenerator {
         // mit der toString-Methode
         return stringBuilder.toString();
     }
-    
-    
 }
