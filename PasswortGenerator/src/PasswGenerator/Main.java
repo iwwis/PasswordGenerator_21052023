@@ -13,7 +13,7 @@ public class Main {
 		// readPasswortFromFile - file auslesen! aufrufen!
 		// NeuMyFile mfh = new NeuMyFile();
 
-	
+
 		// die Variable s wird mit einem Wert belegt
 		// der Wert wurde durch den PasswordGenerator mit der Methode generatePassword gesettet
 		// seine Parameter sind: 

@@ -1,4 +1,5 @@
 package PasswGenerator;
+
 import java.util.Random.*;
 import java.security.SecureRandom;
 
