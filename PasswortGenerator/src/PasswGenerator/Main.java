@@ -21,11 +21,9 @@ public class Main {
 		// 2. er nimmt die Werte aus der Klasse PasswordGenerator, erstellt aus dem String CharacterSet, 
 		// 3. Werte werden aus dem Switch-Fall "All" genommen
 		// 4. Ausgabe s gibt ein random-Wert aus - das sollte sie wenigstens machen!
-		
-		
-		
+		// dieser Teil des Codes hat funktioniert - aber ohne Eingabefläche
 		/**
-		 * 
+		 *
 		 * String s = PasswordGenerator.generatePassword(24, CharacterSet.All);
 		 * System.out.println(s);
 		 * Dieses Block wurde in der Klasse PasswordAnzeige hinzugefügt
@@ -35,7 +33,6 @@ public class Main {
 			catch(IOException e) {			"e" stand vorher für IOException
 				System.out.println("File wurde nicht korrekt gespeichert!");
 				}
-		*/
-		
+		*/	
 	}
 }
