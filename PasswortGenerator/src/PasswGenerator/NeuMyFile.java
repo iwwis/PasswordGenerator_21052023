@@ -21,7 +21,7 @@ public class NeuMyFile {
 		fw.flush();
 		fw.close();
 	}
-	
+
 	public String readPasswortFromFile() {
 		String content = "";
 		// File einlesen und dem Content hinzufügen
