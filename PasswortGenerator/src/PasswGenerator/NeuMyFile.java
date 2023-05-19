@@ -12,7 +12,7 @@ public class NeuMyFile {
 	public NeuMyFile() {
 	
 	}
-
+	
 	public void writePasswordToFile(String pw) throws IOException {
 		File file = new File(PATH);
 		
@@ -21,7 +21,7 @@ public class NeuMyFile {
 		fw.flush();
 		fw.close();
 	}
-
+	
 	public String readPasswortFromFile() {
 		String content = "";
 		// File einlesen und dem Content hinzufügen

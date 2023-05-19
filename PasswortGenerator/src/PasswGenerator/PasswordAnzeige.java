@@ -24,6 +24,7 @@ public class PasswordAnzeige extends JFrame {
 	JButton button;
 	PasswordGenerator pwg;
 	
+	
 	public PasswordAnzeige(PasswordGenerator pwg) {
 		getContentPane().setBackground(new Color(214, 214, 214));
 		getContentPane().setFont(new Font("Bookman Old Style", Font.PLAIN, 13));
