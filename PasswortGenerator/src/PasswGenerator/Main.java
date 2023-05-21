@@ -22,7 +22,6 @@ public class Main {
 		// 4. Ausgabe s gibt ein random-Wert aus - das sollte sie wenigstens machen!
 		
 		
-		
 		/**
 		 * 
 		 * String s = PasswordGenerator.generatePassword(24, CharacterSet.All);
